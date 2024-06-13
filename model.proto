@@ -1,0 +1,11 @@
+syntax = "proto3";
+package binmessage;
+
+message BinaryMessage {
+  bool compressed = 1;
+  int32 code = 2;
+  string recepient = 3;
+  string sender = 4;
+  string meta = 5;
+  bytes data = 6;
+}
